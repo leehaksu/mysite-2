@@ -17,7 +17,7 @@ public class MainServlet extends HttpServlet {
 	@Override
 	public void init() throws ServletException {
 		String configPath = getServletConfig().getInitParameter( "config" );
-		System.out.println( configPath );
+		System.out.println( "Main Servlet Initialized -" + configPath );
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

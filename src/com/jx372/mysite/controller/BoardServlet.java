@@ -3,7 +3,6 @@ package com.jx372.mysite.controller;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,7 +11,7 @@ import com.jx372.mysite.action.board.BoardActionFactory;
 import com.jx372.web.action.Action;
 import com.jx372.web.action.ActionFactory;
 
-@WebServlet("/board")
+//@WebServlet("/board")
 public class BoardServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

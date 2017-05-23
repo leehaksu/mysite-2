@@ -12,7 +12,7 @@ public class ContextLoaderListener implements ServletContextListener {
     	getServletContext().
     	getInitParameter( "contextConfigLocation" );
     	
-    	System.out.println( "컨테이너 시작 하였습니다. - " + contextConfigLocation );
+    	System.out.println( "Container starts... " + contextConfigLocation );
     }
 	
     public void contextDestroyed(ServletContextEvent servletContextEvent)  { 

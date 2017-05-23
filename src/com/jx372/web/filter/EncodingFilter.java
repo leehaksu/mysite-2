@@ -13,7 +13,7 @@ public class EncodingFilter implements Filter {
 	private String encoding;
 	
 	public void init(FilterConfig fConfig) throws ServletException {
-		System.out.println( "encoding filter initialize...." );
+		System.out.println( "Encoding Filter Initialized...." );
 		encoding = fConfig.getInitParameter( "encoding" );
 		if( encoding == null ) { // default charset
 			encoding = "UTF-8";
