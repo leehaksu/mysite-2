@@ -15,27 +15,25 @@
 		<div id="content">
 			<div id="board">
 				<form class="board-form" method="post" action="${pageContext.request.contextPath }/board">
-					<input type="hidden" name="a" value="modify"/>	
-					<input type="hidden" name="no" value="${boardVo.no }" />
-					<input type="hidden" name="kwd" value="${keyword }" />
+					<input type="hidden" name="a" value="write">
 					<table class="tbl-ex">
 						<tr>
-							<th colspan="2">글수정</th>
+							<th colspan="2">글쓰기</th>
 						</tr>
 						<tr>
 							<td class="label">제목</td>
-							<td><input type="text" name="title" value="${boardVo.title }"></td>
+							<td><input type="text" name="title" value=""></td>
 						</tr>
 						<tr>
 							<td class="label">내용</td>
 							<td>
-								<textarea id="content" name="content">${boardVo.content }</textarea>
+								<textarea id="content" name="content"></textarea>
 							</td>
 						</tr>
 					</table>
 					<div class="bottom">
-						<a href="javascript:history.go(-1);">취소</a>
-						<input type="submit" value="수정">
+						<a href="${pageContext.request.contextPath }/board">취소</a>
+						<input type="submit" value="등록">
 					</div>
 				</form>				
 			</div>

@@ -21,6 +21,6 @@ select a.no,
 	   b.name 
   from board a,
        user b
- where a.user_no = b.no;
+ where a.user_no = b.no limit 0, 10;
  	   
 select * from user; 
