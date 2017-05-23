@@ -14,6 +14,7 @@ public class EncodingFilter implements Filter {
 	
 	public void init(FilterConfig fConfig) throws ServletException {
 		System.out.println( "Encoding Filter Initialized...." );
+
 		encoding = fConfig.getInitParameter( "encoding" );
 		if( encoding == null ) { // default charset
 			encoding = "UTF-8";
